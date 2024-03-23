@@ -1,12 +1,20 @@
+let grid;
+let cols;
+let rows;
+let resolution = 4;
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(600, 600);
+    frameRate(10);
+    cols = width / resolution;
+    rows = height / resolution;
+    grid = new Grid(rows, cols);
 }
 
 function draw() {
     background(255);
-    text("put your p5.js code here",10, frameCount % height);
+    grid.display(resolution)
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    // resizeCanvas(windowWidth, windowHeight);
 }

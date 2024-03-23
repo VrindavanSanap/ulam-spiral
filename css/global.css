@@ -1,0 +1,9 @@
+body {
+    font-family: monospace;
+    font-size: 20px;
+}
+h1{
+    font-weight: 100;
+    padding-left: 10px;
+    margin: 0;
+}
